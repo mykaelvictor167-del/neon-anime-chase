@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Anime Chase - Pac-Man Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="neon-text">NEON</span><span class="anime-text">ANIME</span>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="label">SCORE</span>
+                    <span id="score" class="value">00000</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">LIVES</span>
+                    <div id="lives" class="lives-container">
+                        <div class="life-icon"></div>
+                        <div class="life-icon"></div>
+                        <div class="life-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div class="canvas-wrapper">
+                <canvas id="gameCanvas"></canvas>
+                
+                <!-- Start Screen -->
+                <div id="startScreen" class="overlay">
+                    <div class="overlay-content">
+                        <h1>NEON CHASE</h1>
+                        <p>Ajude Astro-Chan a coletar as esferas de energia!</p>
+                        <button id="startBtn" class="primary-btn">INICIAR MISSÃO</button>
+                        <div class="controls-hint">
+                            <span>Use as setas ou WASD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Over Screen -->
+                <div id="gameOverScreen" class="overlay hidden">
+                    <div class="overlay-content">
+                        <h2 class="danger-text">MISSÃO FALHOU</h2>
+                        <div class="final-score">
+                            <span>Pontuação Final:</span>
+                            <span id="finalScore">0</span>
+                        </div>
+                        <button id="restartBtn" class="primary-btn">TENTAR NOVAMENTE</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Inspirado em Pac-Man • Estética Anime Cyberpunk</p>
+        </footer>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
