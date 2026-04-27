@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.neonText {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.animeText {
+    color: #00ffff;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-left: 5px;
+}
+
+.statsBar {
+    display: flex;
+    gap: 30px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.label {
+    font-size: 0.7rem;
+    color: #00ffff;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.livesContainer {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.lifeIcon {
+    width: 15px;
+    height: 15px;
+    background: #ff00ff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ff00ff;
+}
