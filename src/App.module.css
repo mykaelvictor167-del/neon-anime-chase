@@ -1,0 +1,25 @@
+.appContainer {
+    width: 100%;
+    max-width: 900px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gameArea {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
